@@ -18,7 +18,7 @@ from datetime import datetime, timedelta
 from collections import OrderedDict
 
 
-df = pd.read_csv('dataset/Space_Corrected.csv')
+df = pd.read_csv('Space_Corrected.csv')
 df.columns = [
     'Unnamed: 0', 
     'Unnamed: 0.1', 
@@ -92,7 +92,7 @@ with main_panel:
         st.header(' **Data Analytics and Visualization Project** ')
         st.write('')
         
-        image = Image.open("images/space_rocket.png")
+        image = Image.open("space_rocket.png")
         st.image(image,width=600)
         url1 = "https://www.linkedin.com/in/nishesh-jain/"
         url2 = "https://github.com/nisheshjain12"
