@@ -94,9 +94,9 @@ with main_panel:
         
         image = Image.open("space_rocket.png")
         st.image(image,width=600)
-        url1 = "https://www.linkedin.com/in/nishesh-jain/"
-        url2 = "https://github.com/nisheshjain12"
-        st.write(" By - Nishesh Jain [link](%s)" % url1 )
+        url1 = "https://www.linkedin.com/in/atharva-sinhal/"
+        url2 = "https://github.com/atharvasinhal-wq/Space-Mission-Analytics"
+        st.write(" By - Atharva Sinhal [link](%s)" % url1 )
         st.write(" GitHub -  [link](%s)" % url2 )
     
     #####################################################################################
