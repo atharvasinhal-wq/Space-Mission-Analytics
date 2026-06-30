@@ -35,7 +35,7 @@ df = df.drop(['Unnamed: 0', 'Unnamed: 0.1'], axis=1)
 df['Rocket'] = df['Rocket'].fillna(0.0).str.replace(',', '')
 df['Rocket'] = df['Rocket'].astype(np.float64).fillna(0.0)
 df['Rocket'] = df['Rocket'] * 1000000
-df['date'] = pd.to_datetime(df['Datum'], infer_datetime_format=True)
+df['date'] = pd.to_datetime(df['Datum'], dayfirst=True, errors='coerce')
 df['year'] = df['date'].apply(lambda datetime: datetime.year)
 df['month'] = df['date'].apply(lambda datetime: datetime.month)
 df['weekday'] = df['date'].apply(lambda datetime: datetime.weekday())
